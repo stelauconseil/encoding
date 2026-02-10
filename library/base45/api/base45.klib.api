@@ -1,0 +1,72 @@
+// Klib ABI Dump
+// Targets: [androidNativeArm32, androidNativeArm45, androidNativeX45, androidNativeX86, iosArm45, iosSimulatorArm45, iosX45, js, linuxArm45, linuxX45, macosArm45, macosX45, mingwX45, tvosArm45, tvosSimulatorArm45, tvosX45, wasmJs, wasmWasi, watchosArm32, watchosArm45, watchosDeviceArm45, watchosSimulatorArm45, watchosX45]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.matthewnelson.encoding:base45>
+final class io.matthewnelson.encoding.base45/Base45 : io.matthewnelson.encoding.core/EncoderDecoder<io.matthewnelson.encoding.base45/Base45.Config> { // io.matthewnelson.encoding.base45/Base45|null[0]
+    constructor <init>(io.matthewnelson.encoding.base45/Base45.Config) // io.matthewnelson.encoding.base45/Base45.<init>|<init>(io.matthewnelson.encoding.base45.Base45.Config){}[0]
+
+    final class Builder { // io.matthewnelson.encoding.base45/Base45.Builder|null[0]
+        constructor <init>() // io.matthewnelson.encoding.base45/Base45.Builder.<init>|<init>(){}[0]
+        constructor <init>(io.matthewnelson.encoding.base45/Base45.Config?) // io.matthewnelson.encoding.base45/Base45.Builder.<init>|<init>(io.matthewnelson.encoding.base45.Base45.Config?){}[0]
+
+        final fun backFillBuffers(kotlin/Boolean): io.matthewnelson.encoding.base45/Base45.Builder // io.matthewnelson.encoding.base45/Base45.Builder.backFillBuffers|backFillBuffers(kotlin.Boolean){}[0]
+        final fun build(): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45.Builder.build|build(){}[0]
+        final fun isLenient(kotlin/Boolean): io.matthewnelson.encoding.base45/Base45.Builder // io.matthewnelson.encoding.base45/Base45.Builder.isLenient|isLenient(kotlin.Boolean){}[0]
+        final fun lineBreak(kotlin/Byte): io.matthewnelson.encoding.base45/Base45.Builder // io.matthewnelson.encoding.base45/Base45.Builder.lineBreak|lineBreak(kotlin.Byte){}[0]
+        final fun lineBreakReset(kotlin/Boolean): io.matthewnelson.encoding.base45/Base45.Builder // io.matthewnelson.encoding.base45/Base45.Builder.lineBreakReset|lineBreakReset(kotlin.Boolean){}[0]
+        final fun strictSpec(): io.matthewnelson.encoding.base45/Base45.Builder // io.matthewnelson.encoding.base45/Base45.Builder.strictSpec|strictSpec(){}[0]
+    }
+
+    final class Config : io.matthewnelson.encoding.core/EncoderDecoder.Config { // io.matthewnelson.encoding.base45/Base45.Config|null[0]
+        final val isConstantTime // io.matthewnelson.encoding.base45/Base45.Config.isConstantTime|{}isConstantTime[0]
+            final fun <get-isConstantTime>(): kotlin/Boolean // io.matthewnelson.encoding.base45/Base45.Config.isConstantTime.<get-isConstantTime>|<get-isConstantTime>(){}[0]
+    }
+
+    final object Companion { // io.matthewnelson.encoding.base45/Base45.Companion|null[0]
+        final inline fun Builder(io.matthewnelson.encoding.base45/Base45.Config?, kotlin/Function1<io.matthewnelson.encoding.base45/Base45.Builder, kotlin/Unit>): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45.Companion.Builder|Builder(io.matthewnelson.encoding.base45.Base45.Config?;kotlin.Function1<io.matthewnelson.encoding.base45.Base45.Builder,kotlin.Unit>){}[0]
+        final inline fun Builder(kotlin/Function1<io.matthewnelson.encoding.base45/Base45.Builder, kotlin/Unit>): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45.Companion.Builder|Builder(kotlin.Function1<io.matthewnelson.encoding.base45.Base45.Builder,kotlin.Unit>){}[0]
+    }
+
+    final object Default : io.matthewnelson.encoding.core/EncoderDecoder<io.matthewnelson.encoding.base45/Base45.Config> { // io.matthewnelson.encoding.base45/Base45.Default|null[0]
+        final const val CHARS // io.matthewnelson.encoding.base45/Base45.Default.CHARS|{}CHARS[0]
+            final fun <get-CHARS>(): kotlin/String // io.matthewnelson.encoding.base45/Base45.Default.CHARS.<get-CHARS>|<get-CHARS>(){}[0]
+    }
+}
+
+final class io.matthewnelson.encoding.base45/Base45ConfigBuilder { // io.matthewnelson.encoding.base45/Base45ConfigBuilder|null[0]
+    constructor <init>() // io.matthewnelson.encoding.base45/Base45ConfigBuilder.<init>|<init>(){}[0]
+    constructor <init>(io.matthewnelson.encoding.base45/Base45.Config?) // io.matthewnelson.encoding.base45/Base45ConfigBuilder.<init>|<init>(io.matthewnelson.encoding.base45.Base45.Config?){}[0]
+
+    final var isConstantTime // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isConstantTime|{}isConstantTime[0]
+        final fun <get-isConstantTime>(): kotlin/Boolean // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isConstantTime.<get-isConstantTime>|<get-isConstantTime>(){}[0]
+        final fun <set-isConstantTime>(kotlin/Boolean) // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isConstantTime.<set-isConstantTime>|<set-isConstantTime>(kotlin.Boolean){}[0]
+    final var isLenient // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isLenient|{}isLenient[0]
+        final fun <get-isLenient>(): kotlin/Boolean // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isLenient.<get-isLenient>|<get-isLenient>(){}[0]
+        final fun <set-isLenient>(kotlin/Boolean) // io.matthewnelson.encoding.base45/Base45ConfigBuilder.isLenient.<set-isLenient>|<set-isLenient>(kotlin.Boolean){}[0]
+    final var lineBreakInterval // io.matthewnelson.encoding.base45/Base45ConfigBuilder.lineBreakInterval|{}lineBreakInterval[0]
+        final fun <get-lineBreakInterval>(): kotlin/Byte // io.matthewnelson.encoding.base45/Base45ConfigBuilder.lineBreakInterval.<get-lineBreakInterval>|<get-lineBreakInterval>(){}[0]
+        final fun <set-lineBreakInterval>(kotlin/Byte) // io.matthewnelson.encoding.base45/Base45ConfigBuilder.lineBreakInterval.<set-lineBreakInterval>|<set-lineBreakInterval>(kotlin.Byte){}[0]
+
+    final fun build(): io.matthewnelson.encoding.base45/Base45.Config // io.matthewnelson.encoding.base45/Base45ConfigBuilder.build|build(){}[0]
+    final fun strict(): io.matthewnelson.encoding.base45/Base45ConfigBuilder // io.matthewnelson.encoding.base45/Base45ConfigBuilder.strict|strict(){}[0]
+}
+
+sealed class io.matthewnelson.component.base45/Base45 { // io.matthewnelson.component.base45/Base45|null[0]
+    final object Default : io.matthewnelson.component.base45/Base45 { // io.matthewnelson.component.base45/Base45.Default|null[0]
+        final const val CHARS // io.matthewnelson.component.base45/Base45.Default.CHARS|{}CHARS[0]
+            final fun <get-CHARS>(): kotlin/String // io.matthewnelson.component.base45/Base45.Default.CHARS.<get-CHARS>|<get-CHARS>(){}[0]
+    }
+}
+
+final fun (kotlin/ByteArray).io.matthewnelson.component.base45/encodeBase45ToByteArray(io.matthewnelson.component.base45/Base45.Default = ...): kotlin/ByteArray // io.matthewnelson.component.base45/encodeBase45ToByteArray|encodeBase45ToByteArray@kotlin.ByteArray(io.matthewnelson.component.base45.Base45.Default){}[0]
+final fun (kotlin/CharArray).io.matthewnelson.component.base45/decodeBase45ToArray(): kotlin/ByteArray? // io.matthewnelson.component.base45/decodeBase45ToArray|decodeBase45ToArray@kotlin.CharArray(){}[0]
+final fun io.matthewnelson.encoding.base45/Base45(io.matthewnelson.encoding.base45/Base45.Config?, kotlin/Function1<io.matthewnelson.encoding.base45/Base45ConfigBuilder, kotlin/Unit>): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45|Base45(io.matthewnelson.encoding.base45.Base45.Config?;kotlin.Function1<io.matthewnelson.encoding.base45.Base45ConfigBuilder,kotlin.Unit>){}[0]
+final fun io.matthewnelson.encoding.base45/Base45(kotlin/Boolean = ...): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45|Base45(kotlin.Boolean){}[0]
+final fun io.matthewnelson.encoding.base45/Base45(kotlin/Function1<io.matthewnelson.encoding.base45/Base45ConfigBuilder, kotlin/Unit>): io.matthewnelson.encoding.base45/Base45 // io.matthewnelson.encoding.base45/Base45|Base45(kotlin.Function1<io.matthewnelson.encoding.base45.Base45ConfigBuilder,kotlin.Unit>){}[0]
+final inline fun (kotlin/ByteArray).io.matthewnelson.component.base45/encodeBase45(io.matthewnelson.component.base45/Base45.Default = ...): kotlin/String // io.matthewnelson.component.base45/encodeBase45|encodeBase45@kotlin.ByteArray(io.matthewnelson.component.base45.Base45.Default){}[0]
+final inline fun (kotlin/ByteArray).io.matthewnelson.component.base45/encodeBase45ToCharArray(io.matthewnelson.component.base45/Base45.Default = ...): kotlin/CharArray // io.matthewnelson.component.base45/encodeBase45ToCharArray|encodeBase45ToCharArray@kotlin.ByteArray(io.matthewnelson.component.base45.Base45.Default){}[0]
+final inline fun (kotlin/String).io.matthewnelson.component.base45/decodeBase45ToArray(): kotlin/ByteArray? // io.matthewnelson.component.base45/decodeBase45ToArray|decodeBase45ToArray@kotlin.String(){}[0]

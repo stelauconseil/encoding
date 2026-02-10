@@ -13,36 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-rootProject.name = "encoding"
-
-pluginManagement {
-    repositories {
-        mavenCentral()
-        gradlePluginPortal()
-    }
+plugins {
+    id("configuration")
+    id("bom-include")
 }
 
-includeBuild("build-logic")
-
-@Suppress("PrivatePropertyName")
-private val CHECK_PUBLICATION: String? by settings
-
-if (CHECK_PUBLICATION != null) {
-    include(":tools:check-publication")
-} else {
-    arrayOf(
-        "base16",
-        "base32",
-        "base45",
-        "base64",
-        "core",
-        "utf8",
-    ).forEach { name ->
-        include(":library:$name")
+kmpConfiguration {
+    configureShared(java9ModuleName = "io.matthewnelson.encoding.base45", publish = true) {
+        common {
+            sourceSetMain {
+                dependencies {
+                    api(project(":library:core"))
+                }
+            }
+            sourceSetTest {
+                dependencies {
+                    implementation(project(":tools:test"))
+                }
+            }
+        }
     }
-
-    include(":benchmarks")
-    include(":bom")
-    include(":sample")
-    include(":tools:test")
 }
